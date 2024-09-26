@@ -2,20 +2,31 @@
 
 #Operaciones básicas de tipos de datos
 
-Nombre = input("Ingrese su nombre:")
+nombre = input("Ingrese su nombre:")
 
-Edad = input("Ingrese su edad:")
+edad = input("Ingrese su edad:")
 
-Altura = input("Ingrese su altura en metros:")
+altura = input("Ingrese su altura en metros:")
 
 #1.-Convertir los valores 
-Edad = int(Edad)  
-Altura = float(Altura)  
+edad = int(edad)  
+altura = float(altura)  
 
-print(f"Hola {Nombre}, tienes {Edad} años y mides {Altura} metros. Saludos")
+print(f"Hola {nombre}, tienes {edad} años y mides {altura} metros. Saludos")
 
 print()
 print()
 print()
+
+#Ejercicios básicos de matemáticas
+
+#1.- Solicita el radio para calcular el área de un círculo
+radio = float(input("Ingrese el radio del círculo:"))
+
+#2.- Eacribe fórmula del área de un círculo
+area = 3.14* radio**2 
+
+#3.- Imprime el resultado del área
+print(f"El área del círculo es: {area}")
 
 
