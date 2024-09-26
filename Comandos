@@ -1,0 +1,65 @@
+#Significado de cada Comando
+
+#1. Tipos de Datos Esenciales
+
+#a) Operadores (Python sigue la regla de signos a la hora de ejecutar, por lo tanto, 
+verificar que esté todo correcto en la operación para poder ejecutar bien el código y resultado)
+
++ = Suma
+- = Resta
+* = Multiplicación
+/ = División
+** = Exponente
+% = Resto de una División
+== = Igual a 
+> = Mayor que 
+< = Menor que 
+!= = Diferente de 
+>= = Mayor o igual 
+<=  =Menor o igual 
+
+
+#b) Comandos para números
+int = Números Enteros
+float = Números Reales o Flotantes
+complex = Números Complejos (Añadir una j para identificar números complejos)
+
+
+#c) Comandos de texto
+str = strings (Los strings son cadenas de texto, es decir, cualquier dato que sea texto o caracteres. Se escriben entre comillas (" o ').)
+
+
+#d) Comandos tipo lógico (booleanos)
+Se usan para comparar cosas y tomar decisiones en los programas, además son el resultado de comparaciones como ==, >, <, !=, 
+y se utilizan en estructuras como los if para decidir qué debe hacer el programa.
+
+True(1) = Determina que es verdadero
+False(0) = Determina que es falso
+
+
+#2. Estructuras de Control
+
+#a) Entrada y Salida
+input = Permiten al usuario interactuar con el programa
+print = Muestra la salida en el programa, es decir, imprime lo que coloques.
+
+#b) Condicionales, Condicionales Anidadas y con Operadores lógicos
+if = Se usa para ejecutar un bloque de código si una condición es verdadera. Si la condición es falsa, ese bloque de código se ignora.
+else = Se utiliza para ejecutar un bloque de código si la condición del if es falsa. Es una opción alternativa que se ejecuta cuando la condición no se cumple.
+elif = se usa para verificar múltiples condiciones. Si la primera condición es falsa, el programa puede verificar una segunda (o más) usando elif. Se ejecuta el código del primer elif que sea verdadero.
+
+if-else = Las condicionales anidadas ocurren cuando usas una estructura if-else dentro de otra. Esto permite evaluar múltiples condiciones de manera más compleja.
+
+and: Ambas condiciones deben ser verdaderas para que el resultado sea True.
+or: Basta con que una condición sea verdadera para que el resultado sea True.
+not: Invierte el valor booleano de una condición (si es True la convierte en False y viceversa).
+
+#c) Bucles
+for = Recorre una secuencia (como una lista).
+while = Repite mientras una condición sea verdadera.
+
+#d) Listas
+list = Las listas son colecciones de elementos que pueden ser de cualquier tipo de dato. Son como una caja donde puedes guardar varios valores.
+
+#e) Funciones
+def = Las funciones son bloques de código que puedes definir una vez y usar muchas veces.
