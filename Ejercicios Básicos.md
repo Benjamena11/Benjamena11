@@ -137,3 +137,37 @@ elif num2 >= num1 and num2 >= num3:
 else:
 
     print("El mayor es:", num3)
+
+#EJERCICIO 7
+
+contraseña_guardada = "Zaki2046"
+
+contraseña_ingresada = input("Ingrese la Contraseña:")
+
+if contraseña_ingresada == contraseña_guardada:
+
+  print("Acceso concedido")
+
+else:
+
+  print("Acceso denegado")
+
+#EJERCICIO 8
+
+num_1 = float(input("Escriba el primer número:"))
+
+num_2 = float(input("Escriba el segundo número:"))
+
+if num_2 != 0:
+
+  if num_1 % num_2 == 0:
+  
+   print("El número", {num_1}, "es divisible por", {num_2})
+
+  else:
+  
+   print("El número", {num_1}, "no es divisible por", {num_2})
+
+else:
+
+  print("Error: División por cero")
