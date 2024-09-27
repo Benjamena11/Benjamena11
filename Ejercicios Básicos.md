@@ -1,32 +1,71 @@
 # Ejercicios Nivel Básico Python
 
-#Operaciones básicas de tipos de datos
+#Ejercicio 1
 
-nombre = input("Ingrese su nombre:")
+edad = int(input("Escriba su edad:"))
 
-edad = input("Ingrese su edad:")
+if edad >= 18:
+   print("Eres mayor de edad")
 
-altura = input("Ingrese su altura en metros:")
+else:
+   print("Eres menor de edad")
 
-#1.-Convertir los valores 
-edad = int(edad)  
-altura = float(altura)  
 
-print(f"Hola {nombre}, tienes {edad} años y mides {altura} metros. Saludos")
+#Ejercicio 2
 
-print()
-print()
-print()
+calificacion = int(input("Escriba su calificación:"))
 
-#Ejercicios básicos de matemáticas
+if calificacion >=9 and calificacion <= 10:
+  print("Sobresaliente")
 
-#1.- Solicita el radio para calcular el área de un círculo
-radio = float(input("Ingrese el radio del círculo:"))
+elif calificacion >= 7 and calificacion < 9:
+  print("Aprobado")
 
-#2.- Eacribe fórmula del área de un círculo
-area = 3.14* radio**2 
+elif calificacion < 7 and calificacion >= 0:
+  print("Reprobado")
 
-#3.- Imprime el resultado del área
-print(f"El área del círculo es: {area}")
+else:
+  print("Error")
 
+
+#Ejercicio 3
+
+numero = int(input("Escriba un número entero para determinar si es positvo, negativo o cero:"))
+
+if numero > 0:
+  print("El número es positivo")
+
+elif numero < 0:
+  print("Su número es negativo")
+
+else:
+  print("Su número es cero")
+
+
+#Ejercicio 4
+
+num_1 = float(input("Ingrese el primer número:"))
+num_2 = float(input("Ingrese el segundo número:"))
+operacion = input("Elija un operador para la operación (+, -, *, /):")
+
+if operacion == "+":
+  print("El resultado es:",num_1 + num_2)
+
+elif operacion == "-":
+  print("El resultado es:", num_1 - num_2)
+
+elif operacion == "*":
+  print("El resultado es:", num_1 * num_2)
+
+elif operacion == "/":
+  if num_2 != 0:
+    print("El resultado es:", num_1 / num_2)
+
+  else:
+    print("Error, no se puede dividir entre cero")
+
+else:
+  print("Se equivoco en algún paso, vuelva a intentarlo")
+
+#Ejercicio 5
 
