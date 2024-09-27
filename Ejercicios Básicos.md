@@ -171,3 +171,20 @@ if num_2 != 0:
 else:
 
   print("Error: División por cero")
+
+#EJERCICIO 9
+
+numero_secreto = 7
+
+intento = int(input("Adivina el número secreto (entre 1 y 10): "))
+
+if intento == numero_secreto:
+
+    print("¡Felicidades! Adivinaste el número.")
+    
+elif intento > numero_secreto:
+
+    print("El número es más pequeño.")
+else:
+
+    print("El número es más grande.")
