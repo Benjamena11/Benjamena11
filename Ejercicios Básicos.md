@@ -1,6 +1,6 @@
 # Ejercicios Nivel Básico Python
 
-#EJERCICIO 1
+#EJERCICIO 1 - Edad y Mayoría de Edad
 
 edad = int(input("Escriba su edad:"))
 
@@ -12,7 +12,7 @@ else:
 
    print("Eres menor de edad")
 
-#EJERCICIO 2
+#EJERCICIO 2 - Calificación escolar
 
 calificacion = int(input("Escriba su calificación:"))
 
@@ -32,7 +32,7 @@ else:
 
   print("Error")
 
-#EJERCICIO 3
+#EJERCICIO 3 - Nº Negativo, Positivo o Cero
 
 numero = int(input("Escriba un número entero para determinar si es positvo, negativo o cero:"))
 
@@ -48,7 +48,7 @@ else:
 
   print("Su número es cero")
 
-#EJERCICIO 4
+#EJERCICIO 4 - Calculadora Simple
 
 num_1 = float(input("Ingrese el primer número:"))
 
@@ -82,7 +82,7 @@ else:
 
   print("Se equivoco en algún paso, vuelva a intentarlo")
 
-#EJERCICIO 5
+#EJERCICIO 5 - Comparador de Nº
 
 num_1 = float(input("Escriba el primer número:"))
 
@@ -120,7 +120,7 @@ elif num_3 > num_1 and num_3 > num_2:
   
     print("El tercer número es el mayor, y después viene el segundo y primer número")
 
-#EJERCICIO 6 
+#EJERCICIO 6  Comparador Nº simple
 
 num1 = float(input("Ingresa el primer número: "))
 
@@ -138,7 +138,7 @@ else:
 
     print("El mayor es:", num3)
 
-#EJERCICIO 7
+#EJERCICIO 7 - Validar Contraseña
 
 contraseña_guardada = "Zaki2046"
 
@@ -152,7 +152,7 @@ else:
 
   print("Acceso denegado")
 
-#EJERCICIO 8
+#EJERCICIO 8 - Nº divisible
 
 num_1 = float(input("Escriba el primer número:"))
 
@@ -172,7 +172,7 @@ else:
 
   print("Error: División por cero")
 
-#EJERCICIO 9
+#EJERCICIO 9 - Adivina el Nº
 
 numero_secreto = 7
 
@@ -188,3 +188,25 @@ elif intento > numero_secreto:
 else:
 
     print("El número es más grande.")
+
+#EJERCICIO 10 - Cálculo Promedio
+
+num_1 = float(input("Calificación 1:"))
+
+num_2 = float(input("Calificación 2:"))
+
+num_3 = float(input("Calificación 3:"))
+
+promedio = (num_1*0.3) + (num_2*0.3) + (num_3*0.4)
+
+if promedio >=3.95 and promedio <=7:
+
+  print(f"El promedio es: {promedio}, Aprobado" )
+
+elif promedio >=1 and promedio <3.95:
+
+  print(f"El promedio es: {promedio}, Reprobado")
+
+else: 
+
+  print("Error, introduzca de nuevo sus calificaciones")
