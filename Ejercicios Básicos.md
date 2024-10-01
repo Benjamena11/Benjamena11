@@ -210,3 +210,32 @@ elif promedio >=1 and promedio <3.95:
 else: 
 
   print("Error, introduzca de nuevo sus calificaciones")
+
+#EJERCICIO 11 - Cálculo Promedio Redondeado
+
+#Definir variables
+
+num_1 = float(input("Calificación 1:"))
+
+num_2 = float(input("Calificación 2:"))
+
+num_3 = float(input("Calificación 3:"))
+
+#Procesamiento
+
+promedio = (num_1*0.3) + (num_2*0.3) + (num_3*0.4)
+
+promedio_redondeado = round(promedio, 1)
+
+if promedio_redondeado >=3.95 and promedio_redondeado <=7:
+
+  print(f"El promedio es: {promedio_redondeado}, Aprobado" )
+
+elif promedio_redondeado >=1 and promedio_redondeado <3.95:
+
+  print(f"El promedio es: {promedio_redondeado}, Reprobado")
+
+else:
+
+  print("Error, introduzca de nuevo sus calificaciones")
+
