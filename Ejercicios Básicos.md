@@ -239,3 +239,79 @@ else:
 
   print("Error, introduzca de nuevo sus calificaciones")
 
+#EJERCICIO 12 - Porción e Ingredientes Queque Fiesta
+
+# Definir los ingredientes
+
+ingredientes = {
+
+    'huevos': float(4/10), 
+    
+    'tazas de harina': float(8/10), 
+    
+    'taza de leche': float(0.5/10)
+}
+
+# Imprimir los ingredientes base para una porción de queque
+
+print("Cuántos ingredientes necesito para hacer una porción de queque:")
+
+for ingrediente, porcion in ingredientes.items():
+
+    print(f"{porcion} {ingrediente}")
+
+# Pedir el número de personas
+
+personas = int(input("¿Cuántas personas asisten a la fiesta?: "))
+
+# Calcular las porciones para la cantidad de personas
+
+fiesta = {ingrediente: porcion * personas for ingrediente, porcion in ingredientes.items()}
+
+# Imprimir los ingredientes necesarios para la cantidad de personas
+
+print(f"Necesitas estos ingredientes para que cada persona tenga una porción de queque:")
+
+for ingrediente, cantidad in fiesta.items():
+
+    print(f"{cantidad} {ingrediente}")
+
+EJERCICIO 13 - Cálculo Rango Etario
+
+#En Chile, si las personas que tienen menos de 18 años, son consideradas menores de edad; aquellas que están en el rango etario de 18 a 35 años se les considera adultos-jóvenes; quienes superan los 35 años, pero aún no alzanzan los 65 años, son consideradas adultos, y los que tiene 65 años o más son consideradas adultos mayores o miembros de la "tercera edad".
+
+#Se solicita que construya un programa en Python que solicite por teclado la edad de una persona e indique su categoría a partir del rango etario dado.
+
+#ENTRADA
+
+#Se solicita la edad de cada persona
+
+edad = int(input("Coloque su edad para indiciar su rango etario: "))
+
+#PROCESAMIENTO
+
+#Se realizan las sentencias condicionales del enunciado
+
+if edad < 18:
+
+    print("Usted es menor de edad")
+
+elif edad >= 18 and edad <= 35:
+
+    print("Usted es un adulto-joven")
+
+elif edad > 35 and edad < 65:
+
+    print("Usted es adulto")
+
+else:
+
+    print("Usted pertenece a la tercera edad")
+
+continuar = input("¿Desea verificar otra edad? (sí/no): ").lower()
+
+if continuar != "sí":
+
+        print("Programa finalizado.")
+        
+# Rompe el bucle y finaliza el programa
